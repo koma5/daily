@@ -27,4 +27,5 @@ echo "<h1>Rapperswil: </h1>on day " . $dayofyear . "<br>";
 echo "day length: " . $daylength . "<br>";
 echo "sunrise at: " . $sunriseTime . "<br>";
 echo "sunset at: " . $sunsetTime . "<br>";
+
 ?>
