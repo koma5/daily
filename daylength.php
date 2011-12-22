@@ -12,8 +12,8 @@
                         \_          cos(L*pi/180)*cos(P)           _/
 */
 
-$dayofyear = date("z"); //current day of year
-$longitude = 47.2167; //Rapperswil
+$dayofyear = date("z"); //current day of the year
+$longitude = 47.2167; //longitude of Rapperswil in Switzerland
 
 
 $P = asin(0.39795*cos(0.2163108 + 2*atan(0.9671396*tan(0.00860*($dayofyear-186)))));
