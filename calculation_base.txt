@@ -1,0 +1,47 @@
+URL: http://mathforum.org/library/drmath/view/56478.html
+
+
+Date: 08/17/2000 at 11:13:56
+From: David Toomey
+Subject: Calculating daylight hours by date and latitude
+
+Hello!
+
+This is more of an *answer* than a question. I'm doing some research 
+related to seasonal affective disorder, and I needed information about 
+how many hours of sunlight different latitudes get at different times 
+of the year. I searched your web site, and it looked like a couple 
+people had asked this question, but it was hard to answer. Apparently 
+it is very difficult to answer because the earth bulges out in the 
+middle and hence isn't a sphere and because the earth's orbit is an 
+ellipse and not a circle and because the earth wobbles a little, etc.
+
+I did quite a bit of searching, and finally found an article in 
+_Ecological Modeling_, volume 80 (1995) pp. 87-95, called "A Model 
+Comparison for Daylength as a Function of Latitude and Day of the 
+Year." This article presented a model that apparently does a very good 
+job of estimating the daylight - the error is less than one minute 
+within 40 degrees of the equator, and less than seven minutes within 
+60 degrees and usually within two minutes for these latitudes.
+
+I figured that if other people were having trouble finding this 
+information, too, maybe it would be worth saving them some time by 
+letting you know what I found.  So, here's the model:
+
+   D = daylength
+   L = latitude
+   J = day of the year
+
+   P = asin[.39795*cos(.2163108 + 2*atan{.9671396*tan[.00860(J-186)]})]
+
+                          _                                         _
+                         / sin(0.8333*pi/180) + sin(L*pi/180)*sin(P) \
+   D = 24 - (24/pi)*acos{  -----------------------------------------  }
+                         \_          cos(L*pi/180)*cos(P)           _/
+
+
+Use a radian mode here, but latitude should be entered in degrees.
+
+I hope this is helpful!
+
+-David
