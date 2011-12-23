@@ -19,7 +19,7 @@ $longitude = 47.2167; //longitude of Rapperswil in Switzerland
 $P = asin(0.39795*cos(0.2163108 + 2*atan(0.9671396*tan(0.00860*($dayofyear-186)))));
 $daylength = 24 - (24/pi())*acos(    (sin(0.8333*pi()/180) + sin($longitude*pi()/180)*sin($P))   /   (cos($longitude*pi()/180)*cos($P))    );
 
-$sunTransitTime = 12.389166666666666; //would have expected midday 12 == o'clock o.O
+$sunTransitTime = 12.389166666666666; //would have expected midday == 12 o'clock o.O
 $sunriseTime = $sunTransitTime-$daylength/2;
 $sunsetTime = $sunTransitTime+$daylength/2;
 
