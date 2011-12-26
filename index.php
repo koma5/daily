@@ -21,7 +21,7 @@
           <span class="span4 offset12">
             <ul class="nav">
               <li><a href="#">rss</a></li>
-              <li><a href="#">blahhh</a></li>
+              <li><a href="#">impressum</a></li>
             </ul>
           </span>
         </span>
@@ -30,8 +30,8 @@
       <article class="post">
     
           <h1>
-          blog.5th.ch<span class="path">/htaccess-redirect-everything-to-canonical-url</span>
-          <small><br>koma5, 4.12.'11</small>
+          blog.5th.ch<span class="path"><a href="#">/wie-bist-du-hier-gelandet</a></span>
+          <small>koma5, 4.12.'11 tags: blahh, bubb</small>
           </h1>
           
 <p>Oft ist eine Webseite über mehrere URLs erreichbar. Als Beispiel dient dieser Blog hier:
@@ -62,7 +62,13 @@ redirect to blog.5th.ch (canonical URL)</code></p>
 </a></code>wird <code><a href="http://blog.5th.ch/htaccess-redirect-everything-to-canonical-url">blog.5th.ch/htaccess-redirect-everything-to-canonical-url</a></code> .</p>
 
 <p>Die Weiterleitung wird allerdings auf Unterordner vererbt, was ziemlich störend sein kann.</p>
-          
+
+<h1>heading 1<small>small text</small></h1>
+<h2>heading 2<small>small text</small></h2>
+<h3>heading 3<small>small text</small></h3>
+<h4>heading 4<small>small text</small></h4>
+<h5>heading 5<small>small text</small></h5>
+<h6>heading 6<small>small text</small></h6>
         </article>
     
     

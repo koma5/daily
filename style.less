@@ -13,30 +13,95 @@ License URI:
 * highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
 * compiled with less
 */
-
+/* includes */
 @import "styles/reset.less";
+@import "styles/variables.less";
+/* /includes */
 
-@link-color: #4D926F;
+body
+{
+  font-family: 'Georgia', Times, serif;
+  background-color: @background-color;
+  font-size:100%;
+  line-height:1.125em; /* 16×1.125=18 */
+}
 
-.path {
-  color: @link-color;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: @text-color;
+  small {
+    color: gray;
+    font-size:0.5em;
+  }
+}
+
+h1
+{
+  font-size:2.5em;
+}
+
+h2
+{
+  font-size:2.25em;
+}
+
+h3
+{
+  font-size:2em;
+}
+
+h4
+{
+  font-size:1.75em;
+}
+
+h5
+{
+  font-size:1.5em;
+}
+
+h6
+{
+  font-size:1.25em;
+}
+
+
+
+
+footer {border-top: 1px solid #eee;}
+
+
+a
+{
+  text-decoration: none;
+  color: @link-color-normal;
+  
+  &:hover
+  {
+    color: @link-color-hover;
+  }
+}
+
+
+/*.path
+{
+  color: @link-color-normal;
   
   &:hover{
-    color: lighten(@link-color, 20%);
+    color: @link-color-hover;
   }
-
-}
+}*/
 
 .nav
 {
 
   li a
   {
-    color: @link-color;
+    color: @link-color-normal;
 
     &:hover
     {
-      color: lighten(@link-color, 20%);
+      color: @link-color-hover;
     }
   }
 }
