@@ -10,18 +10,19 @@ Tags: blahh, blubb, daily
 License:
 License URI:
 
-highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
+* highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
+* compiled with less
 */
 
 @import "styles/reset.less";
 
-@orange: #4D926F;
+@link-color: #4D926F;
 
 .path {
-  color: @orange;
+  color: @link-color;
   
   &:hover{
-    color: lighten(@orange, 20%);
+    color: lighten(@link-color, 20%);
   }
 
 }
@@ -31,11 +32,11 @@ highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
 
   li a
   {
-    color: @orange;
+    color: @link-color;
 
     &:hover
     {
-      color: lighten(@orange, 20%);
+      color: lighten(@link-color, 20%);
     }
   }
 }
