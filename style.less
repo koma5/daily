@@ -1,0 +1,41 @@
+/*
+Theme Name: daily
+Theme URI: https://github.com/koma5/daily
+Description: minimal wordpress theme, which changes color on daylight
+Author: koma5
+Author URI: http://5th.ch
+Version: 0.0001
+Tags: blahh, blubb, daily
+
+License:
+License URI:
+
+highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
+*/
+
+@import "styles/reset.less";
+
+@orange: #4D926F;
+
+.path {
+  color: @orange;
+  
+  &:hover{
+    color: lighten(@orange, 20%);
+  }
+
+}
+
+.nav
+{
+
+  li a
+  {
+    color: @orange;
+
+    &:hover
+    {
+      color: lighten(@orange, 20%);
+    }
+  }
+}
