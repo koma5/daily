@@ -5,10 +5,8 @@
   <meta charset="utf-8">
   <title>blog.5th.ch/</title>
   
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <!-- <link rel="stylesheet/less" type="text/css" href="styles/main.less">
-  <script src="js/less-1.1.5.min.js" type="text/javascript"></script> -->
-  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">-->
   <style type="text/css">
   
   </style>
