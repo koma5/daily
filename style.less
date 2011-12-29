@@ -22,6 +22,7 @@ body
 {
   font-family: 'Georgia', Times, serif;
   background-color: @background-color;
+  color:@text-color;
   font-size:100%;
   line-height:1.125em; /* 16×1.125=18 */
 }
@@ -29,6 +30,7 @@ body
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: @text-color;
+  padding: 0 0 0.5em 0;
   small {
     color: gray;
     font-size:0.5em;
@@ -65,10 +67,24 @@ h6
   font-size:1.25em;
 }
 
+p
+{
+  padding: 0 0 0.5em 0;
+}
 
+ul {
+  list-style-type: disc;
+}
 
+ol {
+  list-style: decimal;
+}
 
-footer {border-top: 1px solid #eee;}
+footer
+{
+  border-top: 1px solid #eee;
+  font-size: 0.75em;
+}
 
 
 a
@@ -82,6 +98,21 @@ a
   }
 }
 
+code {
+  //background-color: @code-background-color;
+  color: @code-color;
+  padding: 1px 3px;
+}
+
+a#home {
+  color: @text-color;
+  
+  &:hover
+  {
+    color: @link-color-hover;
+  }
+
+}
 
 /*.path
 {
