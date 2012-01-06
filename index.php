@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>blog.5th.ch/</title>
   
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>">
   <!-- <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">-->
   <style type="text/css">
   
