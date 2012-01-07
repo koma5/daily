@@ -30,7 +30,7 @@ body
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: @text-color;
-  padding: 0 0 0.5em 0;
+  margin-bottom: 0.5em;
   small {
     color: gray;
     font-size:0.5em;
@@ -69,16 +69,23 @@ h6
 
 p
 {
-  padding: 0 0 0.5em 0;
+  margin-bottom: 0.5em;
 }
 
 ul {
   list-style-type: disc;
+  margin: 0 0 0.5em 1.75em;
 }
 
 ol {
   list-style: decimal;
+  margin: 0 0 0.5em 1.75em;
 }
+
+
+
+
+
 
 footer
 {
@@ -108,7 +115,6 @@ code {
 a#home {
   color: @text-color;
   
-  
   &:hover
   {
     color: @link-color-hover;
@@ -116,25 +122,39 @@ a#home {
 
 }
 
-/*.path
-{
-  color: @link-color-normal;
-  
-  &:hover{
-    color: @link-color-hover;
-  }
-}*/
-
-.nav
+nav
 {
 
-  li a
+  ul li
   {
-    color: @link-color-normal;
-
-    &:hover
+  
+    &:hover::after
     {
-      color: @link-color-hover;
+      color: @text-color;
+      visibility: visible;
+      content: "]";
     }
+    
+    &:hover::before
+    {
+      color: @text-color;
+      visibility: visible;
+      content: "[";
+    }
+    
+    &:after
+    {
+      color: @background-color;
+      visibility: hidden;
+      content: "]";
+    }
+    
+    &:before
+    {
+      color: @background-color;
+      visibility: hidden;
+      content: "[";
+    }
+    
   }
 }
