@@ -14,14 +14,14 @@
   
   <body id="home">
   
-    <div class="container">
+    <div id="container">
     
       <header>
       
             <nav>
               <ul>
                 <li><a href="<?php bloginfo('rss2_url'); ?>">rss</a></li>
-                <li><a href="#">impressum</a></li>
+                <li><a href="http://twitter.com/koma5">twitter</a></li>
               </ul>
             </nav>
     
