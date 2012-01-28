@@ -13,10 +13,13 @@ License URI:
 * highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
 * compiled with less
 */
+
 /* includes */
 @import "styles/reset.less";
 @import "styles/variables.less";
 /* /includes */
+
+/* basic tags and positioning */
 
 body
 {
@@ -24,48 +27,34 @@ body
   background-color: @background-color;
   color:@text-color;
   font-size:100%;
-  line-height:1.125em; /* 16×1.125=18 */
+  line-height:1.25em;/* 16×1.125=18 */
+  
+  padding:10px;
+}
+
+#container {
+  width:650px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: @text-color;
   margin-bottom: 0.5em;
+  line-height: 1em;
   small {
     color: gray;
     font-size:0.5em;
+    white-space:nowrap;
   }
 }
 
-h1
-{
-  font-size:2.5em;
-}
-
-h2
-{
-  font-size:2.25em;
-}
-
-h3
-{
-  font-size:2em;
-}
-
-h4
-{
-  font-size:1.75em;
-}
-
-h5
-{
-  font-size:1.5em;
-}
-
-h6
-{
-  font-size:1.25em;
-}
+h1 {font-size:2.5em;}
+h2 {font-size:2.25em;}
+h3 {font-size:2em;}
+h4 {font-size:1.75em;}
+h5 {font-size:1.5em;}
+h6 {font-size:1.25em;}
 
 p
 {
@@ -82,24 +71,11 @@ ol {
   margin: 0 0 0.5em 1.75em;
 }
 
-
-
-
-
-
-footer
-{
-  border-top: 1px solid #eee;
-  font-size: 0.75em;
-}
-
-
 a
 {
   text-decoration: none;
   color: @link-color-normal;
 
-  
   &:hover
   {
     color: @link-color-hover;
@@ -112,21 +88,53 @@ code {
   padding: 1px 3px;
 }
 
-a#home {
+footer
+{
+  border-top: 1px solid #eee;
+  font-size: 0.75em;
+}
+
+
+
+
+article.entry
+{
+  margin-bottom:2.5em;
+}
+
+
+a.home {
   color: @text-color;
   
   &:hover
   {
-    color: @link-color-hover;
+    color: @link-color-normal;
   }
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav
 {
 
+text-align:right;
+height:2em;
+
   ul li
   {
+    display: inline ;
   
     &:hover::after
     {
