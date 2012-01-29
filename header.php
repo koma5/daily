@@ -3,7 +3,7 @@
   <head>
   
   <meta charset="utf-8">
-  <title><?php bloginfo('name'); the_title(); ?></title>
+  <title><?php bloginfo('name'); print "/";?></title>
   
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>">
   <style type="text/css">
