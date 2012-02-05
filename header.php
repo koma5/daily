@@ -7,8 +7,32 @@
   
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>">
   <style type="text/css">
-  
   </style>
+  
+  <script type="text/javascript">
+ 
+  function toggleReactions(buttonID, divID) {
+  
+    //switch button toggle text
+	var button = document.getElementById(buttonID);
+	var toggledText = button.getAttribute("toggledtext");
+	button.setAttribute("toggledtext", button.innerHTML);
+	button.innerHTML = toggledText;
+
+	var div = document.getElementById(divID);
+	if (div.style.display == "block")
+	{
+     	div.style.display = "none"
+	}
+	else
+	{
+     	div.style.display = "block";
+	}
+	
+
+  } 
+
+  </script>
   
   </head>
   

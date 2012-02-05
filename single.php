@@ -23,6 +23,12 @@
       
       <!-- REALLY stop The Loop. -->
       <?php endif; ?>
+      
+      <h2><a id="reactionsbutton" onclick="toggleReactions('reactionsbutton', 'reactions')" toggledtext="hide reactions">show reactions</a></h2>
+      
+      <div id="reactions" style="display: none; ">
 
-<?php comments_template( '', true ); ?>      
+        <?php comments_template( '', true ); ?>      
+      </div>
+
 <?php get_footer(); ?>
