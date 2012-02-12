@@ -46,6 +46,7 @@
               <ul>
                 <li><a href="<?php bloginfo('rss2_url'); ?>">rss</a></li>
                 <li><a href="http://twitter.com/koma5">twitter</a></li>
+                <li><a href="http://5th.ch">5th.ch</a></li>
               </ul>
             </nav>
     
