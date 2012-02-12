@@ -1,0 +1,301 @@
+/*
+Theme Name: daily
+Theme URI: https://github.com/koma5/daily
+Description: minimal wordpress theme, which changes color on daylight
+Author: koma5
+Author URI: http://5th.ch
+Version: 0.0001
+Tags: blahh, blubb, daily
+
+License:
+License URI:
+
+* highly influenced by twitter's bootstrap https://github.com/twitter/bootstrap/
+* compiled with less
+*/
+/* includes */
+/* file: reset.less */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  font-family: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol, ul {
+  list-style: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* file: variables.less */
+/* /includes */
+/* basic tags and positioning */
+body {
+  font-family: 'Georgia', Times, serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 100%;
+  line-height: 1.25em;
+  /* 16×1.125=18 */
+
+  padding: 10px;
+}
+#container {
+  width: 650px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0.5em;
+  line-height: 1em;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  color: gray;
+  font-size: 0.5em;
+  white-space: nowrap;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.75em;
+}
+h5 {
+  font-size: 1.5em;
+}
+h6 {
+  font-size: 1.25em;
+}
+p {
+  margin-bottom: 0.5em;
+}
+strong {
+  font-weight: bold;
+}
+ul {
+  list-style-type: disc;
+  margin: 0 0 0.5em 1.75em;
+}
+ol {
+  list-style: decimal;
+  margin: 0 0 0.5em 1.75em;
+}
+a {
+  text-decoration: none;
+  color: #4d926f;
+}
+a:hover {
+  color: #86bfa2;
+}
+code {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1px 3px;
+}
+footer {
+  border-top: 1px solid #eee;
+  font-size: 0.75em;
+}
+article.entry {
+  margin-bottom: 2.5em;
+}
+.entry a.home {
+  color: #000000;
+}
+.entry a.home:hover {
+  color: #4d926f;
+}
+.entry-single a.path {
+  color: #000000;
+}
+.entry-single a.path:hover {
+  color: #4d926f;
+}
+nav {
+  text-align: right;
+  height: 2em;
+}
+nav ul li {
+  display: inline ;
+}
+nav ul li:hover::after {
+  color: #000000;
+  visibility: visible;
+  content: "]";
+}
+nav ul li:hover::before {
+  color: #000000;
+  visibility: visible;
+  content: "[";
+}
+nav ul li:after {
+  color: #ffffff;
+  visibility: hidden;
+  content: "]";
+}
+nav ul li:before {
+  color: #ffffff;
+  visibility: hidden;
+  content: "[";
+}
