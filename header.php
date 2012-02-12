@@ -6,6 +6,9 @@
   <title><?php bloginfo('name'); print "/";?></title>
   
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+
+  <link rel=”alternate” type=”application/rss+xml” title=”<?php bloginfo('name'); ?>” href=”<?php bloginfo('rss2_url'); ?>” />
+
   <style type="text/css">
   </style>
   
