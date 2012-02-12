@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-
-
-
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   
       <article class="entry-single" id="<?php echo basename(get_permalink()); ?>">
@@ -24,7 +21,7 @@
       <!-- REALLY stop The Loop. -->
       <?php endif; ?>
       
-      <h2><a id="reactionsbutton" onclick="toggleReactions('reactionsbutton', 'reactions')" toggledtext="hide reactions">show reactions</a></h2>
+      <h4><a id="reactionsbutton" onclick="toggleReactions('reactionsbutton', 'reactions')" toggledtext="hide reactions">show reactions</a></h4>
       
       <div id="reactions" style="display: none; ">
 
